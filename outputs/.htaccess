@@ -1,0 +1,2 @@
+# Deny direct web access to converted files (use download.php)
+Require all denied

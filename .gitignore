@@ -1,0 +1,11 @@
+/vendor/
+vendor.zip
+uploads/*
+!uploads/.gitkeep
+!uploads/.htaccess
+outputs/*
+!outputs/.gitkeep
+!outputs/.htaccess
+*.log
+.DS_Store
+Thumbs.db

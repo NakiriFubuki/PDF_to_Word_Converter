@@ -1,0 +1,11 @@
+{
+    "name": "nakirifubuki/pdf-to-word-converter",
+    "description": "PageShift — local PDF ↔ Word converter (PHP + MySQL)",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "smalot/pdfparser": "^2.12",
+        "phpoffice/phpword": "^1.1",
+        "tecnickcom/tcpdf": "^6.11"
+    }
+}
