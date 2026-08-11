@@ -9,9 +9,15 @@ Drop a file, pick a direction, and download the result — processed **locally**
 
 ## 🎬 **Project Demo Video**
 
-📺 Watch the full PageShift demo (PDF → Word, Word → PDF, User Manual & more):
+📺 Watch the full system demo (PDF → Word, Word → PDF, User Manual & more):
 
-👉 **[Watch on Google Drive](https://drive.google.com/file/d/1iz1J0Am5K1YHtVzvNQtE579qs3QlzUmZ/view?usp=sharing)**
+<p align="center">
+  <a href="https://drive.google.com/file/d/1iz1J0Am5K1YHtVzvNQtE579qs3QlzUmZ/view?usp=sharing">
+    <strong>👉 Watch on Google Drive</strong>
+  </a>
+  <br/>
+  <sub>https://drive.google.com/file/d/1iz1J0Am5K1YHtVzvNQtE579qs3QlzUmZ/view?usp=sharing</sub>
+</p>
 
 ---
 
