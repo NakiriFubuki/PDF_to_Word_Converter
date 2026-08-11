@@ -7,6 +7,14 @@ Drop a file, pick a direction, and download the result — processed **locally**
 
 ---
 
+## 🎬 **Project Demo Video**
+
+📺 Watch the full PageShift demo (PDF → Word, Word → PDF, User Manual & more):
+
+👉 **[Watch on Google Drive](https://drive.google.com/file/d/1iz1J0Am5K1YHtVzvNQtE579qs3QlzUmZ/view?usp=sharing)**
+
+---
+
 ## ✨ **Features**
 
 - 🔁 **Two-way conversion** — **PDF → Word** and **Word → PDF**
@@ -108,6 +116,34 @@ Drop a file, pick a direction, and download the result — processed **locally**
 
 6. 📖 Click **User Manual** in the top bar for the full guide.
 
+### ☁️ **Deploying to cPanel / hosting**
+
+XAMPP defaults (`root` / empty password / database `pdf_to_word`) **will not work** on cPanel. That is what caused `api/history.php` and `api/convert.php` to return HTTP 500.
+
+1. 📤 Upload the full project, **including the `vendor/` folder** (Git does not include it).
+2. 🗄️ In cPanel → **MySQL Databases**, create a database and a user, then add the user to the database with **ALL PRIVILEGES**.
+3. 🧰 Open the installer once:
+
+   ```text
+   https://engchoonhao.kolejsynergy.com/PDF_to_Word_Converter/install.php
+   ```
+
+4. ✅ Enter host `localhost`, plus the cPanel database name / user / password, then save.
+5. 🩺 Confirm everything is green:
+
+   ```text
+   https://engchoonhao.kolejsynergy.com/PDF_to_Word_Converter/check.php
+   ```
+
+6. 🗑️ Delete or rename `install.php` after a successful install.
+7. 🌐 Use the app at:
+
+   ```text
+   https://engchoonhao.kolejsynergy.com/PDF_to_Word_Converter/
+   ```
+
+> ⚠️ If `vendor/` is missing, convert cannot run. Zip `vendor` from your PC and extract it next to `index.php`.
+
 ---
 
 ## 🧭 **How to Use**
@@ -148,6 +184,8 @@ PDF_to_Word_Converter/
 ├── uploads/                 # Incoming files (blocked by .htaccess)
 ├── outputs/                 # Converted files (blocked by .htaccess)
 ├── index.php
+├── install.php             # cPanel MySQL setup (delete after use)
+├── check.php               # Hosting health check
 ├── README.md
 ├── CONTRIBUTING.md
 └── LICENSE
@@ -165,7 +203,9 @@ Files on disk are cleaned up after **24 hours**.
 
 ## ⚙️ **Configuration**
 
-Edit `includes/config.php` for database credentials, max file size, and copyright:
+On cPanel, run `install.php` or copy `includes/config.local.example.php` to `includes/config.local.php` and fill in the live MySQL name, user, and password.
+
+Edit `includes/config.php` for max file size and copyright:
 
 ```php
 define('APP_COPYRIGHT_NOTICE', 'Copyright © 2026 Eng Choon Hao. All Rights Reserved.');
